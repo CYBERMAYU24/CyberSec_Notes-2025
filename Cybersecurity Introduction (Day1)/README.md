@@ -29,7 +29,7 @@ Cybersecurity professionals often specialize in one of three main domains:
 | **Red Team**    | 🟥 Offensive | Simulates real-world attacks to identify vulnerabilities. Ethical hackers.                    |
 | **Purple Team** | 🟪 Hybrid    | Bridges the gap between red and blue teams. Facilitates communication and strategy alignment. |
 
-![Red, Blue & Purple Teams](assets/Screenshot 2025-06-07 224338.png)
+![Red, Blue & Purple Teams](./3_Cybersecutrity_Domains.png)
 
 ---
 
