@@ -1,6 +1,6 @@
 
 ---
-![Cybersecurity Image](./assets/399a53aa-54e1-40e0-aa5a-8be40e836209.png)
+![Cybersecurity Image](Common_threats.png)
 ## 📌 Types of Cybersecurity Threats
 
 ### 1. **Phishing**
@@ -74,13 +74,13 @@ A zero-day attack exploits a software vulnerability that is unknown to the softw
 
 ---
 
-## 🧰 Detailed Hacking Devices
+## 🧰 Some Popular Hacking Devices
 
 ---
 
 ### 🔌 1. Rubber Ducky
 
-![Rubber Ducky](https://raw.githubusercontent.com/hak5darren/USB-Rubber-Ducky/master/img/usbducky.jpg)
+![Rubber Ducky](usb_rubberducky.jpg)
 
 The **Rubber Ducky** is a USB device that looks like a regular flash drive, but when plugged into a computer, it acts like a keyboard and types commands at lightning speed.
 
@@ -96,7 +96,7 @@ Plugged into a computer, it can open PowerShell, disable security, and download 
 
 ### 🧠 2. O.MG Cable
 
-![O.MG Cable](https://shop.hak5.org/cdn/shop/products/OMG-Cable-Lightning.png)
+![O.MG Cable](omg_cable.jpg)
 
 The **O.MG Cable** looks like an ordinary USB charging cable, but it secretly contains a microcontroller and Wi-Fi chip, allowing attackers to control it remotely.
 
@@ -112,7 +112,7 @@ Leave it on a desk—once the victim uses it, the attacker can connect over Wi-F
 
 ### 🐬 3. Flipper Zero
 
-![Flipper Zero](https://flipperzero.one/img/og_image.png)
+![Flipper Zero](flipper.jpg)
 
 **Flipper Zero** is a portable, open-source multi-tool for hackers and pentesters. Shaped like a tamagotchi, it’s cute—but powerful.
 
