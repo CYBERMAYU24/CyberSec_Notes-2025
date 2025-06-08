@@ -19,6 +19,28 @@ Effective cybersecurity requires a **layered defense** strategy across computers
 
 ---
 
+## 🕵️‍♂️ What is Pegasus?
+
+**Pegasus** is a powerful spyware created by Israel’s **NSO Group**. It can silently infect phones using **zero-click exploits**, gaining full access to messages, mic, camera, and GPS — even on encrypted apps.
+
+## 🕰️ Brief History
+
+- **2016**: First discovered when it targeted a human rights activist.
+- **2019**: WhatsApp sued NSO after 1,400 users were attacked.
+- **2021**: The **Pegasus Project** (by Amnesty & media partners) revealed it was used to spy on journalists, activists & world leaders — including in **India**.
+
+## ⚠️ Why it’s dangerous
+
+- Infects without clicks or interaction
+- Works even on iPhones & encrypted apps
+- Almost impossible to detect
+
+## 🌐 Real-World Impact
+
+Pegasus became a global symbol of unethical digital surveillance and is now studied in cybersecurity and digital rights communities.
+
+---
+
 ## 🎯 3 Domains in Cybersecurity
 
 Cybersecurity professionals often specialize in one of three main domains:
