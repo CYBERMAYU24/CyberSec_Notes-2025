@@ -75,7 +75,7 @@ The `grep` command is used to search for specific patterns or words within files
 
 # Types of Hackers
 
-![Types of Hackers](./e53be266-e691-489d-b611-a83368d1968a.png)
+![Types of Hackers](./Hacker_Types.png)
 
 ## 1. White Hat Hacker
 - **Also Known As:** Ethical Hacker
