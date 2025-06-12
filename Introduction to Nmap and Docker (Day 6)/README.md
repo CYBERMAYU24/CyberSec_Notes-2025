@@ -2,8 +2,6 @@
 
 ---
 
-# 📚 Day 6: Nmapping and Related Topics
-
 ## 🔍 Nmapping (Nmap)
 
 * **Nmap (Network Mapper)** is a free and powerful tool used to scan and discover hosts, open ports, and services in a network.
@@ -112,4 +110,119 @@ You won’t see any live terminal output.
 
 ---
 
+---
+
+
+## 📊 Uptime Kuma
+
+**Uptime Kuma** is a free, self-hosted monitoring tool that checks the uptime and availability of your websites, servers, and services.
+
+* **Purpose:** It notifies you if your services are down.
+* **Features:**
+
+  * Beautiful Web UI
+  * Customizable alerts (via Telegram, Discord, email, etc.)
+  * HTTP(s), TCP, Ping, and Docker container monitoring.
+* **Example Use:** Monitor your website `example.com` and get a Telegram alert if it goes offline.
+
+![Uptime Kuma Example](https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg)
+
+---
+
+## 🌐 Open Web UI Docker
+
+When running a **Dockerized** app (like Uptime Kuma), many tools provide a **Web UI (User Interface)** to easily manage and visualize the service.
+
+* **How it works:**
+
+  * The Docker container exposes a specific **port** (like `http://localhost:3001`).
+  * You can open this link in your browser to access the application dashboard.
+* **Example Command:**
+
+  ```bash
+  docker run -d -p 3001:3001 --name uptime-kuma louislam/uptime-kuma
+  ```
+
+  You can then open the web UI at: `http://localhost:3001`
+
+---
+
+## 🚪 Docker Nginx Reverse Proxy
+
+**Nginx Reverse Proxy** forwards client requests to backend services running in Docker.
+
+* **Why Use It?**
+
+  * To route multiple services on the same server using different domains or subdomains.
+  * For example:
+
+    ```
+    yourdomain.com --> Uptime Kuma container
+    api.yourdomain.com --> API container
+    ```
+
+* **Benefits:**
+
+  * Centralized request management
+  * SSL termination (HTTPS)
+
+* **Example Docker Setup:**
+
+  ```yaml
+  services:
+    nginx:
+      image: nginx
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+  ```
+
+  You can configure Nginx to direct traffic to your running Docker containers based on the request domain or path.
+
+---
+
+## 🔍 `sudo nmap -O <ip/domain>`
+
+**Nmap** (Network Mapper) is a powerful tool for network scanning and security auditing.
+
+* **Command:**
+
+  ```bash
+  sudo nmap -O <ip/domain>
+  ```
+
+* **Purpose:**
+  Detects the **operating system (OS)** of the target machine.
+
+* **Flags:**
+
+  * `sudo` → Needed because OS detection often requires elevated permissions.
+  * `-O` → Enables **OS detection**.
+
+* **Example:**
+
+  ```bash
+  sudo nmap -O example.com
+  ```
+
+* **Output:**
+
+  * Open ports
+  * Detected operating system
+  * Network details
+
+---
+
+### 🚀 Summary Table
+
+| Term/Command               | Purpose                            | Example                               |
+| -------------------------- | ---------------------------------- | ------------------------------------- |
+| Uptime Kuma                | Monitor uptime                     | Web dashboard on `localhost:3001`     |
+| Open Web UI Docker         | Access web interface of Docker app | Run container and open in browser     |
+| Docker Nginx Reverse Proxy | Route multiple apps via domains    | Forward `yourdomain.com` to container |
+| sudo nmap -O               | Scan OS of IP/domain               | `sudo nmap -O example.com`            |
+
+---
 
