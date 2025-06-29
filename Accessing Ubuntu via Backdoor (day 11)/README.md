@@ -28,8 +28,16 @@ Most home and lab networks have `.1` as the default **gateway/router IP**. For e
 
 * `-Pn`: Skip host discovery (assume target is up).
 * `-p- `: Scan all 65000 ports.
+* `-p <port>`: scan a specified port (ex. -p80).
 * `-vv`: Very verbose output (more details).
 * `<ipaddress>`: Target IP address.
+*  `-sV`
+- **Purpose**: Enables **version detection**.
+- **What it does**: Tries to determine the **software name and version** running on open ports.
+- **Example**: `nmap -sV 192.168.1.1`
+- **Use case**: Helpful in **vulnerability assessment** to know which services are outdated or exploitable.
+```
+
 
 Example:
 
