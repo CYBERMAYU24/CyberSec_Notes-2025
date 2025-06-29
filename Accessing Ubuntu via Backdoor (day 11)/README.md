@@ -22,12 +22,12 @@ Most home and lab networks have `.1` as the default **gateway/router IP**. For e
 
 ---
 
-### 🔎 `sudo nmap -Pn -p <port> -vv <ipaddress>`
+### 🔎 `sudo nmap -Pn -p- <port> -vv <ipaddress>`
 
 **Purpose**: Scan a specific port on a target without pinging first.
 
 * `-Pn`: Skip host discovery (assume target is up).
-* `-p <port>`: Scan the specified port (e.g., 80).
+* `-p- `: Scan all 65000 ports.
 * `-vv`: Very verbose output (more details).
 * `<ipaddress>`: Target IP address.
 
